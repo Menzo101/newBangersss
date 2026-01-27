@@ -229,6 +229,27 @@ li {
 }
 
 @media (max-width: 480px) {
+
+    header {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        height: 70px;
+
+        /* background-color: rgba(255, 255, 255, 1); */
+        padding: 0 10px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        /* box-shadow: 4px 4px 4px 2px white; */
+    }
+
     .menu-toggle {
         display: block;
         /* hidden on desktop */
@@ -236,6 +257,7 @@ li {
         height: 15px;
         position: relative;
         cursor: pointer;
+        top: -6px;
         z-index: 2000;
     }
 
@@ -251,6 +273,7 @@ li {
         position: absolute;
         top: 70px;
         left: 0;
+        right: 0;
         width: 100%;
         background: #fff;
 
