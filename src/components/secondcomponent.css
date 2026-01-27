@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.hero {
+
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    /* vertical center */
+    justify-content: center;
+
+
+
+
+
+
+    /* position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff; */
+
+}
+
+/* Background image grid feel */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url("../assets/backgroundimage.jpeg") center/cover no-repeat;
+    filter: blur(1px);
+    width: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+/* Main Content */
+/* .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+} */
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centers text + button */
+    text-align: center;
+}
+
+
+.hero-content h1 {
+    font-size: 72px;
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 2%;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-family: Montserrat;
+    line-height: 1.5;
+
+}
+
+.highlight {
+    display: block;
+    color: rgba(255, 97, 77, 1);
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #cfcfcf;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 15px 34px;
+    background-color: rgba(255, 97, 77, 1);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+.cta-btn:hover {
+    background-color: rgba(255, 97, 77, 1);
+}
+
+/* Social Proof */
+.social-proof {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+
+
+
+    color: #bdbdbd;
+
+}
+
+.icons {
+    /* margin-top: 2rem; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.avatars {
+    display: flex;
+    gap: 15px;
+
+}
+
+#trumpet {
+    color: white;
+    font-size: 2rem;
+    display: block;
+
+}
+
+#stars {
+    display: block;
+    width: 10px;
+}
+
+.newContainer {
+    margin-top: 1rem;
+}
+
+.newContainer p {
+    font-size: 14px;
+    font-family: Montserrat;
+}
+
+/* .avatars img {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 40%;
+
+
+    object-fit: contain;
+
+} */
+
+.tick-link {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 1.7;
+    white-space: nowrap;
+    opacity: 0.9;
+}
+
+.tick-line img {
+    width: 14px;
+}
+
+.barb {
+    font-size: 14px;
+}
+
+/* Featured On Strip */
+.featured-strip {
+    position: absolute;
+
+    bottom: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    color: #9a9a9a;
+    font-size: 0.95rem;
+
+
+}
+
+.feature-strip h3 {
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 1.7;
+}
+
+.ticker {
+    overflow: hidden;
+    flex: 1;
+
+}
+
+.ticker-track {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    animation: tickerScroll 22s linear infinite;
+
+}
+
+
+
+/* Ticker Animation */
+@keyframes tickerScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-content {
+        max-width: 1100px;
+    }
+
+    .hero-content h1 {
+        font-size: 84px;
+        line-height: 1.15;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 22px;
+        max-width: 760px;
+        line-height: 1.6;
+    }
+
+    .cta-btn {
+        font-size: 1.1rem;
+        padding: 18px 42px;
+    }
+
+    .avatars img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .featured-strip {
+        bottom: 30px;
+    }
+
+    .social-proof {
+        display: flex;
+        justify-content: center;
+
+        max-width: 1100px;
+        margin: 0 auto;
+
+
+    }
+
+    .newContainer p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width:480px) {
+    .hero-content h1 {
+        margin-top: 4rem;
+        font-size: 48px;
+        font-family: Montserrat;
+        font-weight: 600;
+        letter-spacing: 1%;
+        line-height: 1;
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-top: 2.5rem;
+        font-size: 16px;
+        font-family: Montserrat;
+        line-height: 1.5;
+        text-align: center;
+
+
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 850px;
+        margin: 4rem auto;
+        align-items: center;
+
+
+    }
+
+    #trumpet {
+        color: black;
+        font-size: 1.5rem;
+        display: block;
+
+    }
+
+    #stars {
+        display: block;
+        width: 10px;
+    }
+
+    .cta-btn {
+        margin-top: 2.5rem;
+        padding: 18px 30px;
+        background-color: rgba(255, 97, 77, 1);
+        border: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        font-family: Montserrat;
+        width: 90%;
+    }
+
+    .cta-btn:hover {
+        background-color: rgba(255, 97, 77, 1);
+    }
+
+    .social-proof {
+
+        display: flex;
+        justify-content: center;
+
+
+        gap: 10px;
+
+        color: #bdbdbd;
+
+        max-width: 400px;
+        margin: 2.5rem auto;
+
+    }
+
+    .icons {
+        margin-top: 1rem;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 10px;
+
+
+    }
+
+    .avatars {
+        display: flex;
+        gap: 15px;
+
+    }
+
+    #trumpet {
+        color: black;
+        font-size: 12px;
+        display: block;
+
+    }
+
+    #stars {
+        display: block;
+        font-size: 12px;
+    }
+
+    .newContainer p {
+        font-size: 12px;
+        font-family: Montserrat;
+    }
+
+    .avatars img {
+        width: 100px;
+        height: 100px;
+        border-radius: 40%;
+
+        /* margin-left: -8px; */
+        object-fit: contain;
+
+    }
+
+    .tick-link {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        line-height: 1.7;
+        white-space: nowrap;
+        opacity: 0.9;
+    }
+
+    .featured-strip {
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 12px 40px;
+        color: #9a9a9a;
+        font-size: 16px;
+
+
+    }
+
+    .feature-strip h3 {
+        color: white;
+        font-size: 16px;
+        font-family: Montserrat;
+        line-height: 1.7;
+    }
+
+    .ticker {
+        overflow: hidden;
+        flex: 1;
+
+    }
+
+    .ticker-track {
+        display: flex;
+        gap: 50px;
+        width: max-content;
+        animation: tickerScroll 22s linear infinite;
+
+    }
+}
+
+@media (max-width:380px) {
+    .hero-content h1 {
+        margin-top: 1rem;
+        font-size: 36px;
+        font-family: Montserrat;
+        font-weight: 600;
+        letter-spacing: 1%;
+        line-height: 1.2;
+        width: 370px;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-top: 1rem;
+        font-size: 16px;
+        font-family: Montserrat;
+        line-height: 1.5;
+        text-align: center;
+
+
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 850px;
+        margin: 1rem auto;
+        align-items: center;
+
+
+    }
+
+    #trumpet {
+        color: black;
+        font-size: 1.5rem;
+        display: block;
+
+    }
+
+    #stars {
+        display: block;
+        width: 10px;
+    }
+
+    .cta-btn {
+        margin-top: 1rem;
+        padding: 18px 28px;
+        background-color: rgba(255, 97, 77, 1);
+        border: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        font-family: Montserrat;
+        width: 90%;
+    }
+
+    .cta-btn:hover {
+        background-color: rgba(255, 97, 77, 1);
+    }
+
+    .social-proof {
+
+        display: flex;
+        justify-content: center;
+
+
+        gap: 10px;
+
+        color: #bdbdbd;
+
+        max-width: 300px;
+        margin: 1rem auto;
+
+    }
+
+    .icons {
+        margin-top: 10px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 10px;
+
+
+    }
+
+    .avatars {
+        display: flex;
+        gap: 15px;
+
+    }
+
+    #trumpet {
+        color: white;
+        font-size: 14px;
+        display: block;
+
+    }
+
+    #stars {
+        display: block;
+        font-size: 13px;
+    }
+
+    .newContainer p {
+        font-size: 12px;
+        font-family: Montserrat;
+    }
+
+    .avatars img {
+        width: 100px;
+        height: 100px;
+        border-radius: 40%;
+
+        /* margin-left: -8px; */
+        object-fit: contain;
+
+    }
+
+    .tick-link {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        line-height: 1.7;
+        white-space: nowrap;
+        opacity: 0.9;
+    }
+
+    .featured-strip {
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 12px 0;
+        color: #9a9a9a;
+        font-size: 16px;
+
+
+    }
+
+    .feature-strip h3 {
+        color: white;
+        font-size: 16px;
+        font-family: Montserrat;
+        line-height: 1.7;
+    }
+
+    .ticker {
+        overflow: hidden;
+        flex: 1;
+
+    }
+
+    .ticker-track {
+        display: flex;
+        gap: 50px;
+        width: max-content;
+        animation: tickerScroll 22s linear infinite;
+
+    }
+
+
+}

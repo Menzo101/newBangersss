@@ -1,0 +1,371 @@
+.header-section {
+
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    height: 70px;
+
+
+}
+
+
+header {
+    display: flex;
+    max-width: 1384px;
+    margin: 0 auto;
+
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    height: 70px;
+    margin: 0 auto;
+    /* background-color: rgba(255, 255, 255, 1); */
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* box-shadow: 4px 4px 4px 2px white; */
+}
+
+
+.logo img {
+    width: 200px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.links {
+    text-decoration: none;
+    color: rgba(102, 102, 102, 1);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.24%;
+}
+
+.signup-element {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.24%;
+    display: block;
+
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.signup-btn {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.24%;
+    background-color: rgba(255, 97, 77, 1);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+} */
+
+/* .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+} */
+.menu-toggle {
+    display: none;
+    /* hidden on desktop */
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.menu-toggle span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    /* force visibility */
+    transition: all 0.3s ease;
+}
+
+
+
+
+.menu-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.menu-toggle span:nth-child(2) {
+    top: 10px;
+}
+
+.menu-toggle span:nth-child(3) {
+    top: 20px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+
+
+#ham-btn {
+    display: none;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.24%;
+    background-color: rgba(255, 97, 77, 1);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.hamburger-element {
+    display: none;
+}
+
+/* responssive */
+
+@media (max-width:768px) {
+    .menu-toggle {
+        display: block;
+        position: relative;
+        right: 1rem;
+
+
+    }
+
+    /* .menu-toggle {
+        display: flex;
+    } */
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+
+        /* 🔥 THIS CONTROLS VISIBILITY */
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        z-index: 1000
+    }
+
+    .nav.open {
+        height: 260px;
+        /* adjust if needed */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .signup-element {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .menu-toggle {
+        display: block;
+        position: relative;
+        right: 0
+    }
+
+    /* .menu-toggle {
+        display: flex;
+    } */
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+
+
+        /* 🔥 THIS CONTROLS VISIBILITY */
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        z-index: 1000
+    }
+
+    .nav.open {
+        height: 400px;
+        /* adjust if needed */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .signup-element {
+        display: none;
+    }
+
+    .signup-btn {
+        display: block;
+        background-color: transparent;
+        color: black;
+    }
+
+    #ham-btn {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.24%;
+        background-color: rgba(255, 97, 77, 1);
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .hamburger-element {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+
+    }
+
+    .login-btn {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.24%;
+        background-color: rgba(255, 97, 77, 1);
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+}
+
+@media (max-width:380px) {
+    .logo img {
+        width: 150px;
+    }
+
+    #ham-btn {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+
+        font-weight: 600;
+
+        background-color: rgba(255, 97, 77, 1);
+        padding: 8px 14px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    header {
+        display: flex;
+        max-width: 1384px;
+        margin: 0 auto;
+
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        height: 70px;
+        margin: 0 auto;
+        /* background-color: rgba(255, 255, 255, 1); */
+        padding: 0 10px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        /* box-shadow: 4px 4px 4px 2px white; */
+    }
+
+    .menu-toggle span {
+        position: absolute;
+        left: 0;
+        /* width: 60%;
+        height: 1.5px;
+        background-color: #000; */
+        /* force visibility */
+        transition: all 0.3s ease;
+        font-size: 45px;
+        /* margin: 0;
+        padding: 0; */
+    }
+
+}

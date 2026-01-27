@@ -1,0 +1,256 @@
+.how-section {
+    padding: 60px 20px;
+    text-align: center;
+
+    background: #ffffff;
+}
+
+.how-tag {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff6a3d;
+    margin-bottom: 10px;
+}
+
+.how-title {
+    font-family: Montserrat;
+    font-weight: 600;
+
+    font-size: 48px;
+
+    line-height: 1;
+    text-align: center;
+
+    margin: 10px 0;
+
+}
+
+.how-title span {
+    color: rgba(255, 97, 77, 1);
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: Italic;
+    font-size: 48px;
+
+    line-height: 36px;
+    letter-spacing: 0%;
+}
+
+/* Cards grid */
+.how-grid {
+    max-width: 1384px;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+
+}
+
+/* Card */
+.how-card {
+
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 60px 10px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: border ease-in-out;
+}
+
+.how-card:hover {
+    border: 4px solid rgba(255, 97, 77, 1);
+
+
+}
+
+/* Icon wrapper */
+.icon-wrapper {
+    position: absolute;
+    top: 8px;
+    left: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #fff2ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step number */
+.step-number {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background: #ff6a3d;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon */
+.icon {
+    font-size: 22px;
+}
+
+/* Text */
+.how-card h3 {
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    text-align: left;
+}
+
+.how-card p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Button */
+.how-btn {
+    background: rgba(255, 97, 77, 1);
+    color: #fff;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.how-btn:hover {
+    background: #e95932;
+}
+
+.gridTwo {
+    margin-top: 2rem;
+}
+
+@media (max-width:480px) {
+    .how-section {
+        padding: 60px 10px;
+        text-align: center;
+
+        background: #ffffff;
+    }
+
+    .how-tag {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .how-title {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 26px;
+        width: 100%;
+        line-height: 1.5;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .how-grid {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    .how-card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 60px 10px;
+        width: 100%;
+
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .icon-wrapper {
+        position: absolute;
+        top: 24px;
+
+        left: 24px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #fff2ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Step number */
+    .step-number {
+        position: absolute;
+        top: -16px;
+        right: -6px;
+        width: 20px;
+        height: 20px;
+        background: #ff6a3d;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 600;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon {
+        position: relative;
+
+    }
+
+    .how-title span {
+        color: rgba(255, 97, 77, 1);
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: Italic;
+        font-size: 26px;
+
+        line-height: 36px;
+        letter-spacing: 0%;
+    }
+
+    .how-btn {
+        display: none;
+    }
+
+    .gridTwo {
+        margin-top: 4rem;
+    }
+
+}

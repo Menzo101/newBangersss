@@ -1,0 +1,167 @@
+.why-section {
+    padding: 60px 20px;
+    background: #ffffff;
+    text-align: center;
+
+
+}
+
+.why-tag {
+    color: rgba(170, 88, 0, 1);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.why-title {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 36px;
+
+    line-height: 48px;
+    margin-bottom: 60px;
+}
+
+.why-title span {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: Italic;
+    font-size: 36px;
+
+    color: #FF641D;
+    line-height: 48px;
+
+
+}
+
+.why-grid {
+    max-width: 1384px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+
+}
+
+.why-card {
+    background: #f8f8f8;
+    padding: 35px 24px;
+    width: 100%;
+    border-radius: 18px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+    background-color: #E42007 !important;
+
+    color: white;
+}
+
+
+
+.why-icon {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.why-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: rgba(33, 35, 34, 1);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.why-card:hover h3,
+.why-card:hover p {
+    color: #ffffff;
+}
+
+
+.why-card p {
+    font-family: Montserrat;
+    font-weight: 400;
+
+    font-size: 14px;
+
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    line-height: 1.6;
+}
+
+@media (max-width:480px) {
+
+    .why-section {
+        padding: 40px 10px;
+        background: #ffffff;
+        text-align: center;
+
+
+    }
+
+    .why-tag {
+        color: rgba(170, 88, 0, 1);
+        font-family: Montserrat;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 8px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .why-title {
+        font-family: Montserrat;
+        font-weight: 600;
+
+        font-size: 26px;
+
+        line-height: 36px;
+        letter-spacing: 0%;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .why-title span {
+
+
+
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: Italic;
+        font-size: 26px;
+        color: rgba(255, 97, 77, 1);
+        line-height: 48px;
+    }
+
+    .why-grid {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .why-card {
+        background: #f8f8f8;
+        padding: 35px 20px;
+        width: 100%;
+        border-radius: 18px;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+
+}

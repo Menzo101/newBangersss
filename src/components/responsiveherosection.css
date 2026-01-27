@@ -1,0 +1,27 @@
+.responsiveherosection {
+    max-width: 1512px;
+    margin: 0 auto;
+    display: none;
+}
+
+.responsiveherosection img {
+    width: 100%;
+}
+
+@media(max-width:768px) {
+    .responsiveherosection {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    .responsiveherosection {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: none;
+    }
+}
