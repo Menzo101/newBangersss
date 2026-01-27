@@ -163,5 +163,14 @@
         transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
+    .why-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+        background-color: #E42007 !important;
+
+        color: white;
+    }
+
 
 }

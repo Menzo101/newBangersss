@@ -231,13 +231,21 @@ li {
 @media (max-width: 480px) {
     .menu-toggle {
         display: block;
+        /* hidden on desktop */
+        width: 25px;
+        height: 15px;
         position: relative;
-        right: 0
+        cursor: pointer;
+        z-index: 2000;
     }
 
     /* .menu-toggle {
-        display: flex;
+        display: block;
+        position: relative;
+        right: 0
     } */
+
+
 
     .nav {
         position: absolute;
@@ -277,18 +285,23 @@ li {
         color: black;
     }
 
+    .logo img {
+        width: 150px;
+    }
+
     #ham-btn {
         display: block;
         text-decoration: none;
         color: white;
         font-family: "Montserrat", sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         letter-spacing: -0.24%;
         background-color: rgba(255, 97, 77, 1);
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 8px;
+        padding: 10px 15px;
+
+        border-radius: 5px;
+
     }
 
     .hamburger-element {

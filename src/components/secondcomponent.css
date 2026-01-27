@@ -17,16 +17,6 @@
     /* vertical center */
     justify-content: center;
 
-
-
-
-
-
-    /* position: relative;
-    height: 100vh;
-    overflow: hidden;
-    color: #fff; */
-
 }
 
 /* Background image grid feel */
@@ -295,8 +285,24 @@
 
 
 @media (max-width:480px) {
+    .hero {
+
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        color: #fff;
+
+        display: flex;
+        align-items: center;
+        /* vertical center */
+        justify-content: center;
+
+
+    }
+
+
     .hero-content h1 {
-        margin-top: 4rem;
+        margin-top: 3rem;
         font-size: 48px;
         font-family: Montserrat;
         font-weight: 600;
@@ -320,7 +326,7 @@
         position: relative;
         z-index: 2;
         max-width: 850px;
-        margin: 4rem auto;
+        margin: 2rem auto;
         align-items: center;
 
 
@@ -328,7 +334,7 @@
 
     #trumpet {
         color: black;
-        font-size: 1.5rem;
+        font-size: 1rem;
         display: block;
 
     }
@@ -339,7 +345,7 @@
     }
 
     .cta-btn {
-        margin-top: 2.5rem;
+        margin-top: 1rem;
         padding: 18px 30px;
         background-color: rgba(255, 97, 77, 1);
         border: none;
@@ -367,18 +373,33 @@
         color: #bdbdbd;
 
         max-width: 400px;
-        margin: 2.5rem auto;
+        margin: 5px auto;
 
     }
 
     .icons {
-        margin-top: 1rem;
+        margin-top: 5px;
+        position: relative;
+        top: 2rem;
 
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 7px;
         margin-left: 10px;
 
+
+    }
+
+    .social-proof {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+
+
+
+        color: #bdbdbd;
 
     }
 
@@ -389,20 +410,30 @@
     }
 
     #trumpet {
-        color: black;
-        font-size: 12px;
+        color: white;
+        font-size: 1.5rem;
         display: block;
 
     }
+
+
+
+
 
     #stars {
         display: block;
         font-size: 12px;
     }
 
+    .newContainer {
+        margin-top: -2rem;
+    }
+
     .newContainer p {
         font-size: 12px;
         font-family: Montserrat;
+        color: white;
+
     }
 
     .avatars img {
@@ -495,12 +526,16 @@
 
     }
 
+
+
+
     #trumpet {
-        color: black;
+        color: white;
         font-size: 1.5rem;
         display: block;
 
     }
+
 
     #stars {
         display: block;
