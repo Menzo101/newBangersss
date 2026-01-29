@@ -8,9 +8,10 @@
 .hero {
 
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
     color: #fff;
+    padding: 0 0 4rem 0;
 
     display: flex;
     /* align-items: center; */
@@ -291,10 +292,11 @@
     .hero {
 
         position: relative;
-        /* height: 100vh; */
+
+        padding: 0 0 2rem 0;
         overflow: hidden;
         color: #fff;
-        bottom: 5px;
+
         display: flex;
 
         /* align-items: center; */
@@ -672,6 +674,22 @@
         gap: 50px;
         width: max-content;
         animation: tickerScroll 22s linear infinite;
+
+    }
+
+    .hero {
+
+        position: relative;
+
+        padding: 0 0 2rem 0;
+        overflow: hidden;
+        color: #fff;
+
+        display: flex;
+
+        /* align-items: center; */
+
+
 
     }
 
