@@ -4,7 +4,7 @@ import gallerytwo from "./assets/gallerytwo.png";
 import gallerythree from "./assets/gallerythree.png";
 import galleryfour from "./assets/oappicture.png";
 import galleryeight from "./assets/music.jpeg";
-import galleryfive from "./assets/connect.png";
+import galleryfive from "./assets/influlenceroverlay.png";
 import gallerysix from "./assets/bloggeroverlay.png";
 import galleryseven from "./assets/singing.png";
 import iconone from "./assets/iconone.png";
@@ -30,18 +30,21 @@ export const steps = [
     title: "Start by Adding Your Track",
     text: "Upload your music as the first step, so NewBanger can analyze it and match you with the right promotional tools.",
     icon: iconone,
+    color: "danger",
   },
   {
     step: "2",
     title: "Select Platform/Curator",
-    text: "Pick the platforms and curators you want to promote your music. That’s the power of NewBanger—we don’t choose for you.",
+    text: "Pick the platforms and curators you want to promote your music. That's the power of NewBanger—we don't choose for you.",
     icon: icontwo,
+    color: "primary",
   },
   {
     step: "3",
     title: "Finalize Your Campaign",
     text: "Carefully review your selected platforms, curators, and campaign details, then confidently launch your music.",
     icon: iconthree,
+    color: "success",
   },
 ];
 

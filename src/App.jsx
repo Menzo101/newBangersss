@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatWeDo from "./components/WhatWeDo";
@@ -12,23 +12,28 @@ import Testimonial from "./components/Testimonial";
 import Slider from "./components/Slider";
 import Home from "./pages/Home";
 import ChangeBackground from "./components/ChangeBackground";
+import SelectAccountType from "./auth/authpages/SelectAccountType";
+import BloggerSignup from "./auth/authpages/BloggerSignup";
+import SelectCuratorType from "./auth/authpages/SelectCuratorType";
+import SignupForm from "./auth/authpages/SignupForm";
+import Email from "./auth/authpages/Email";
+import Login from "./auth/authpages/Login";
+import ConfirmEmail from "./auth/authpages/ConfirmEmail";
 
 function App() {
   return (
     <>
-      <Home />
-
-      {/* <Navbar />
-      <HeroComponent />
-      <WhatWeDo />
-      <BangerGallery />
-      <StepByStep />
-      <TrustUs />
-      <Slider />
-      <Testimonial />
-      <MusicCreatorBanner />
-
-      <Footer /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<SelectAccountType />} />
+          <Route path="/signup/curator/type" element={<SelectCuratorType />} />
+          <Route path="/signupform" element={<SignupForm />} />
+          <Route path="/email" element={<Email />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/confirm-email" element={<ConfirmEmail />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
