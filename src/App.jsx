@@ -19,6 +19,10 @@ import SignupForm from "./auth/authpages/SignupForm";
 import Email from "./auth/authpages/Email";
 import Login from "./auth/authpages/Login";
 import ConfirmEmail from "./auth/authpages/ConfirmEmail";
+import AdditionalInformation from "./auth/authpages/AdditionalInformation";
+import ContentCreatorMorePages from "./auth/authpages/ContentCreatorMorePages";
+import ContentMoreInfo from "./auth/authpages/ContentMoreInfo";
+import SocialMediaPage from "./auth/authpages/SocialMediaPage";
 
 function App() {
   return (
@@ -32,6 +36,22 @@ function App() {
           <Route path="/email" element={<Email />} />
           <Route path="/login" element={<Login />} />
           <Route path="/confirm-email" element={<ConfirmEmail />} />
+          <Route
+            path="/additional_information"
+            element={<AdditionalInformation />}
+          />
+          <Route
+            path="/content-more-info"
+            element={<ContentMoreInfo />}
+          />
+          <Route
+            path="/blog-details"
+            element={<ContentCreatorMorePages />}
+          />
+          <Route
+            path="/social-media"
+            element={<SocialMediaPage />}
+          />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import logoimage from "../../assets/newbanger.png";
+import avatarImage from "../../assets/musicianandcurator.png";
+import { SignUpContext } from "../../context/SignUpContext";
 
 const ConfirmEmail = () => {
   const navigate = useNavigate();
+  const { signupData } = useContext(SignUpContext);
 
   return (
     <div className="min-h-screen flex">
@@ -35,9 +38,11 @@ const ConfirmEmail = () => {
           <div className="flex items-center gap-3">
             <div className="flex -space-x-2">
               {[0, 1, 2, 3].map((i) => (
-                <div
+                <img
                   key={i}
-                  className="w-8 h-8 rounded-full border-2 border-white bg-gray-400"
+                  src={avatarImage}
+                  alt=""
+                  className="w-8 h-8 rounded-full border-2 border-white object-cover"
                 />
               ))}
             </div>
@@ -89,7 +94,7 @@ const ConfirmEmail = () => {
 
               {/* Proceed Button */}
               <button
-                onClick={() => navigate("/login")}
+                onClick={() => navigate(signupData.curatorType === "music_blog" ? "/additional_information" : "/login")}
                 className="w-full py-3 bg-primary hover:bg-primary/90 text-white font-['Sora'] font-semibold text-sm rounded-full transition-all duration-300"
               >
                 Proceed

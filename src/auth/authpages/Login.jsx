@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logoimage from "../../assets/newbanger.png";
+import avatarImage from "../../assets/musicianandcurator.png";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -60,9 +61,11 @@ const Login = () => {
           <div className="flex items-center gap-3">
             <div className="flex -space-x-2">
               {[0, 1, 2, 3].map((i) => (
-                <div
+                <img
                   key={i}
-                  className="w-8 h-8 rounded-full border-2 border-white bg-gray-400"
+                  src={avatarImage}
+                  alt=""
+                  className="w-8 h-8 rounded-full border-2 border-white object-cover"
                 />
               ))}
             </div>

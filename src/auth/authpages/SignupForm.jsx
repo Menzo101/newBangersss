@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { SignUpContext } from "../../context/SignUpContext.jsx";
 import logoimage from "../../assets/newbanger.png";
+import avatarImage from "../../assets/musicianandcurator.png";
 
 const SignupForm = () => {
   const { signupData } = useContext(SignUpContext);
@@ -87,9 +88,11 @@ const SignupForm = () => {
           <div className="flex items-center gap-3">
             <div className="flex -space-x-2">
               {[0, 1, 2, 3].map((i) => (
-                <div
+                <img
                   key={i}
-                  className="w-8 h-8 rounded-full border-2 border-white bg-gray-400"
+                  src={avatarImage}
+                  alt=""
+                  className="w-8 h-8 rounded-full border-2 border-white object-cover"
                 />
               ))}
             </div>
