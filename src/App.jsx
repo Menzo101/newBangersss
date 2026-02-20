@@ -23,6 +23,8 @@ import AdditionalInformation from "./auth/authpages/AdditionalInformation";
 import ContentCreatorMorePages from "./auth/authpages/ContentCreatorMorePages";
 import ContentMoreInfo from "./auth/authpages/ContentMoreInfo";
 import SocialMediaPage from "./auth/authpages/SocialMediaPage";
+import ForgetPasswordPage from "./auth/authpages/ForgetPasswordPage";
+import ResetPassword from "./auth/authpages/ResetPassword";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path="/signupform" element={<SignupForm />} />
           <Route path="/email" element={<Email />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/forgot-password" element={<ForgetPasswordPage />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/confirm-email" element={<ConfirmEmail />} />
           <Route
             path="/additional_information"
