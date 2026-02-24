@@ -25,6 +25,7 @@ import ContentMoreInfo from "./auth/authpages/ContentMoreInfo";
 import SocialMediaPage from "./auth/authpages/SocialMediaPage";
 import ForgetPasswordPage from "./auth/authpages/ForgetPasswordPage";
 import ResetPassword from "./auth/authpages/ResetPassword";
+import PlayListCuratorAdditionalInfoPage from "./auth/authpages/PlayListCuratorAdditionalInfoPage";
 
 function App() {
   return (
@@ -55,6 +56,10 @@ function App() {
           <Route
             path="/social-media"
             element={<SocialMediaPage />}
+          />
+          <Route
+            path="/playlist-curator-info"
+            element={<PlayListCuratorAdditionalInfoPage />}
           />
         </Routes>
       </BrowserRouter>

@@ -94,7 +94,15 @@ const ConfirmEmail = () => {
 
               {/* Proceed Button */}
               <button
-                onClick={() => navigate(signupData.curatorType === "music_blog" ? "/additional_information" : "/login")}
+                onClick={() => {
+                  if (signupData.curatorType === "music_blog") {
+                    navigate("/additional_information");
+                  } else if (signupData.curatorType === "playlist_curator") {
+                    navigate("/playlist-curator-info");
+                  } else {
+                    navigate("/login");
+                  }
+                }}
                 className="w-full py-3 bg-primary hover:bg-primary/90 text-white font-['Sora'] font-semibold text-sm rounded-full transition-all duration-300"
               >
                 Proceed
